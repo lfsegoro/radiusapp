@@ -5,12 +5,16 @@ Ready OUT-OF-THE-BOX to use packages bundle, with 4 services in docker-compose.y
 4. adminer (http://host-ip:8082) as additional general UI that can directly access the database.
 
 Requirement:
-1. Internet connection of the mainhost.
-2. *nix host environment with sudo or root access. Recommended fedora core os (FCOS).
-3. docker and docker-compose installed.
-4. bash,,sh not enough because must run a script, you can easily install bash for example if you use alpine linux.
+1. Internet connection ON the mainhost.
+2. Linux host environment with sudo or root access. 
+3. docker and docker compose installed. I use docker -v
+Docker version 29.1.5, build 0e6fee6
+and I was using this script to install docker :
+curl -fsSL https://get.docker.com | sh
+4. bash terminal
 5. git must be installed.
-   
+
+JUST COPY ALL THE SCRIPT TO THE TERMINAL.   
 Usage :
 ```bash
 # Must run in bash shell because of hostip.sh need it (cant use sh shell).
