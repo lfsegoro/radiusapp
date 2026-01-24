@@ -1,13 +1,13 @@
 Ready OUT-OF-THE-BOX to use packages bundle, with 4 services in docker-compose.yml configuration:
 1. freeradius server 3.2.7 as radius server.
 2. postgresql 17
-3. nodejs backend (akses: http://host-ip:5000) as basic custom UI that can be use as basis of developing.
-4. adminer (http://host-ip:8082) as additional general UI that can directly access the database.
+3. nodejs backend (akses: http://host_ip_address:5000) as basic custom UI that can be use as basis of developing.
+4. adminer (http://host_ip_address:8082) as additional general UI that can directly access the database.
 
 Requirement:
-1. Internet connection ON the mainhost.
-2. Linux host environment with sudo or root access. 
-3. docker and docker compose installed. I use docker -v
+1. Internet connection ON the host.
+2. Linux host with sudo or root access. 
+3. docker and docker compose must be installed. I use docker -v
 Docker version 29.1.5, build 0e6fee6
 and I was using this script to install docker :
 curl -fsSL https://get.docker.com | sh
@@ -54,7 +54,7 @@ true
 ```
 
 4. Let the the script do autmatic pull and installing.
-5. access from the UI.  http://host-ip:5000 or http://host-ip:8082
+5. access from the UI.  http://host_ip_address:5000 or http://host_ip_address:8082
 6. test using Ntradping or directly from NAS like mikrotik.
 
 You can learn the detail on the docker-compose.yml if you want to see the password or make modification.
@@ -63,9 +63,6 @@ The database already have sample username for testing. you can check the radchec
 
 You can test using ntradping or directly from a NAS like mikrotik.
 
-If you need :
-- custom freeradius configuration
-- more polished UI
 
 Detailed note:
 - username and password user testing, 1 entry in 'radcheck' table.
